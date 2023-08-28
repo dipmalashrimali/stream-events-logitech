@@ -27,10 +27,10 @@ class EventController extends Controller
             $user = Auth::user();
 
             /* Start : Update data with login user as we want some dummy data*/
-            Donation::where('login_id', '!=', $user->id)->update(['login_id', $user->id]);
-            Follower::where('login_id', '!=', $user->id)->update(['login_id', $user->id]);
-            Subscriber::where('login_id', '!=', $user->id)->update(['login_id', $user->id]);
-            MerchSale::where('login_id', '!=', $user->id)->update(['login_id', $user->id]);
+            Donation::where('login_id', '!=', $user->id)->update(['login_id' => $user->id]);
+            Follower::where('login_id', '!=', $user->id)->update(['login_id' => $user->id]);
+            Subscriber::where('login_id', '!=', $user->id)->update(['login_id' => $user->id]);
+            MerchSale::where('login_id', '!=', $user->id)->update(['login_id' => $user->id]);
             /* End : Update data with login user as we want some dummy data*/
 
             // Construct a subquery to fetch event data from multiple sources
@@ -84,7 +84,7 @@ class EventController extends Controller
                 ->paginate(self::PER_PAGE_NO); // Adjust the per-page limit as needed
 
             return response()->json($eventsData);
-        } catch (\Throwable $e) {
+        } catch (\Throwable $e) {dd($e);
             return response()->json(['message' => 'Oops unexpected error, Please try again later or contact support.'], $e->status ?? 500);
         }
     }

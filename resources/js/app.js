@@ -1,4 +1,5 @@
 import './bootstrap';
+import * as bootstrap from 'bootstrap';
 import { createApp } from "vue/dist/vue.esm-bundler";
 import AppComponent from "./components/App.vue";
 import router from "./router/index";

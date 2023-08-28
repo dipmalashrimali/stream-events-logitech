@@ -68,7 +68,7 @@ const loadMoreEvents = async () => {
 onMounted(() => {
     setTimeout(()=>{
         loadMoreEvents(); // Initial load
-    },500);
+    },1000);
 
 });
 window.addEventListener('scroll', () => {
