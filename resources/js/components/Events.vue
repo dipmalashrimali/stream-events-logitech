@@ -29,7 +29,7 @@
                     </ul>
                 </div>
                 <div class="d-flex text-center text-primary justify-content-center" v-else>
-                    <div class="d-flex justify-content-center alert alert-info fw-bold">Events are loading please wait....</div>
+                    <div class="d-flex justify-content-center alert alert-info fw-bold">No events are found.</div>
                 </div>
 
             </div>
