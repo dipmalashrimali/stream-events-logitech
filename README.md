@@ -56,6 +56,10 @@ php artisan serve
 
 - Run ``php artisan db:seed``
 
+## Screenshots
+- ![Screen - 1](https://github.com/dipmalashrimali/stream-events-logitech/blob/main/screen-1.jpg)
+- ![Screen - 2](https://github.com/dipmalashrimali/stream-events-logitech/blob/main/screen-2.jpg)
+- ![Screen - 3](https://github.com/dipmalashrimali/stream-events-logitech/blob/main/screen-3.jpg)
 
 ## License
 
